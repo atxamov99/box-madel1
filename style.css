@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 3s;
+}
+
+.cloud{
+    width: 200px;
+    height: 100px;
+    transition: all 3s;
+    animation-name: cloud;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.cloud1{
+    width: 200px;
+    height: 100px;
+    transition: all 3s;
+    animation-name: cloud1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.mount{
+    width: 100%;
+}
+
+.cloud2{
+    width: 300px;
+    height: 200px;
+    transition: all 3s;
+    animation-delay: 2s;
+    animation-name: cloud2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+
+.sun{
+    width: 250px;
+    height: 250px;
+    transition: all 3s;
+    animation-name: sun;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    border-radius: 100px;
+}
+
+@keyframes cloud{
+    0%{
+        transform: translateX(-700px);
+    }
+
+    100%{
+        transform: translateX(700px);
+        color: grey;
+    }
+
+
+}
+
+@keyframes cloud1{
+    0%{
+        transform: translateX(700px);
+    }
+
+    100%{
+        transform: translateX(-700px);
+        color: grey;
+    }
+
+
+}
+
+@keyframes cloud2{
+    0%{
+        transform: translateX(700px);
+    }
+
+    100%{
+        transform: translateX(-700px);
+        color: grey;
+    }
+
+
+}
+
+@keyframes sun{
+    0%{
+        transform: translateY(700px);
+        background-color: none;
+    }
+
+    100%{
+        transform: translateY(-100px);
+        background-color: orange;
+    }
+}
